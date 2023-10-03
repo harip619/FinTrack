@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #dddfe2;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            color: #1877f2;
+            margin-bottom: 20px;
+        }
+
+        .logo img{
+            max-width: 350px;
+        }
+
+        .input-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .input-container input[type="submit"] {
+            background-color: #1877f2;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .input-container input[type="submit"]:hover {
+            background-color: black;
+        }
+
+        .signup-link {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"><img src="Fin-Track.png" alt="Fin-Track"></div>
+        <form action="login_process.php" method="post">
+            <div class="input-container">
+                <label for="email"></label>
+                <input type="text" id="email" name="email" placeholder="Enter Email" required>
+            </div>
+            <div class="input-container">
+                <label for="password"></label>
+                <input type="password" id="password" name="password" required placeholder="Enter Password">
+            </div>
+            <div class="input-container">
+                <input type="submit" value="Log In">
+            </div>
+        </form>
+        <div class="signup-link">Don't have an account? <a href="signup.php">Sign Up</a></div>
+    </div>
+</body>
+</html>
